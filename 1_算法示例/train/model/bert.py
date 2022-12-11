@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append('bert_pretrain')
-sys.path.append('pytorch_pretrained_bert')
+sys.path.append('model')
 
 import torch
 import torch.nn as nn

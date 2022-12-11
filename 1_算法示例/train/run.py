@@ -10,7 +10,7 @@ from importlib import import_module
 from utils import build_dataset, build_iterator, get_time_dif
 
 if __name__ == '__main__':
-    dataset = 'model'  # 数据集
+    dataset = '1_算法示例/train/model'  # 数据集
 
     # model_name = args.model  # bert
     x = import_module('model.bert')

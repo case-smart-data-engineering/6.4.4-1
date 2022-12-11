@@ -1,5 +1,6 @@
 pytest
 numpy
 torch
-importlib
+scikit-learn
+tqdm
 pytorch_pretrained_bert
