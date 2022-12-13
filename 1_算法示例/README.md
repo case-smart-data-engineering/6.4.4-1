@@ -28,3 +28,6 @@ https://github.com/case-smart-data-engineering/6.4.4-1/blob/main/1_%E7%AE%97%E6%
 # 如果是运行run.py文件训练的话 会自动在该目录下生成模型文件
 ```
 6. 模型训练完毕后，在命令行里输入 `python predict.py` 按 `ENTER` 运行示例程序。
+
+## 备注
+如果是在gitpod上运行代码，需要按照使用指南的顺序进入正确的目录才可运行成功
