@@ -1,5 +1,7 @@
 # encoding:utf-8
 
+import sys
+sys.path.append('..')
 import torch
 from importlib import import_module
 

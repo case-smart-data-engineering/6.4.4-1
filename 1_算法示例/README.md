@@ -2,7 +2,10 @@
 
 ## 使用指南
 
-1. 按 `CTRL + P` 打开命令行面板，输入 "terminal: Create New Terminal" 打开一个命令行终端.
+1. 按 `CTRL + P` 打开命令行面板，输入 "terminal: Create New Terminal" 打开一个命令行终端 或者按` CTRL + ` `直接打开命令行终端
+```
+如果快捷键没有反应，请手动点击最下面那行状态栏的第四个图标 然后在弹出的tab里点击TERMINAL打开命令行终端
+```
 2. 在命令行里输入 `pip install -r requirements.txt` 按 `ENTER` 安装示例程序所需依赖库。
 > 如果安装报错 可以尝试以下命令升级pip
 ```
