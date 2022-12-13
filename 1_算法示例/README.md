@@ -13,4 +13,4 @@ pip install ez_setup
 3. 在命令行里输入 `cd 1_算法示例` 并按 `ENTER` 进入"算法示例"目录。
 4. 通过 https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz 下载bert预处理模型放置于1_算法示例/train/model/bert_pretrain下
 5. 在命令行里输入 `python train/run.py` 按 `ENTER` 运行训练模型程序。
-6. 模型训练完毕后，在命令行里输入 `python run.py` 按 `ENTER` 运行示例程序。
+6. 模型训练完毕后，在命令行里输入 `python predict.py` 按 `ENTER` 运行示例程序。
