@@ -11,6 +11,17 @@ pip install --upgrade setuptools
 pip install ez_setup
 ```
 3. 在命令行里输入 `cd 1_算法示例` 并按 `ENTER` 进入"算法示例"目录。
-4. 通过 https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz 下载bert预处理模型放置于1_算法示例/train/model/bert_pretrain下
-5. 在命令行里输入 `python train/run.py` 按 `ENTER` 运行训练模型程序。
+4. 已经通过git lfs 上传模型文件至github上，gitpod无法访问，显示的是指针型文件，需要手动从github上下载放置于指定路径中或者将本项目克隆到本地运行
+```
+# 如果是在gitpod上运行
+# 下载预训练模型pytorch_model.bin替换1_算法示例/train/model/bert_pretrain/pytorch_model.bin
+https://github.com/case-smart-data-engineering/6.4.4-1/blob/main/1_%E7%AE%97%E6%B3%95%E7%A4%BA%E4%BE%8B/train/model/bert_pretrain/pytorch_model.bin
+```
+5. 在命令行里输入 `python train/run.py` 按 `ENTER` 运行训练模型程序 或者跟4一样下载我们已经训练好的bert模型
+```
+# 可以不用手动训练模型，直接用我们训练好的模型
+# 下载bert模型bert.ckpt替换替换1_算法示例/train/model/saved_dict/bert.ckpt
+https://github.com/case-smart-data-engineering/6.4.4-1/blob/main/1_%E7%AE%97%E6%B3%95%E7%A4%BA%E4%BE%8B/train/model/saved_dict/bert.ckpt
+# 如果是运行run.py文件训练的话 会自动在该目录下生成模型文件
+```
 6. 模型训练完毕后，在命令行里输入 `python predict.py` 按 `ENTER` 运行示例程序。
