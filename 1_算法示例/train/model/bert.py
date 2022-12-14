@@ -25,7 +25,7 @@ class Config(object):
         self.class_list = [x.strip() for x in open(
             dataset + '/data/class.txt').readlines()]
         # 模型训练结果
-        self.save_path = dataset + '/saved_dict/' + self.model_name + '.ckpt'
+        self.save_path = dataset + '/saved_model/' + self.model_name + '.ckpt'
         # 在cpu设备上运行
         self.device = torch.device('cpu')
         # 若超过1000batch效果还没提升，则提前结束训练
@@ -41,7 +41,7 @@ class Config(object):
         # 学习率
         self.learning_rate = 5e-5
         # bert预处理模型路径
-        self.bert_path = dataset + '/bert_pretrain'
+        self.bert_path = dataset + '/saved_model'
         # 加载bert模型
         self.tokenizer = BertTokenizer.from_pretrained(self.bert_path)
         # 定义隐层维数
