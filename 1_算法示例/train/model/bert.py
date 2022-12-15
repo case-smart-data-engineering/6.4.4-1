@@ -33,7 +33,7 @@ class Config(object):
         # 类别数
         self.num_classes = len(self.class_list)
         # epoch数
-        self.num_epochs = 20
+        self.num_epochs = 10
         # mini-batch大小
         self.batch_size = 16
         # 每句话处理成的长度(短填长切)，文本不足128个字符自动填充，超过就切掉后面的部分
