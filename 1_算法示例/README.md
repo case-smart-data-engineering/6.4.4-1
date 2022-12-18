@@ -6,7 +6,8 @@
 ```
 如果快捷键没有反应，请手动点击最下面那行状态栏的第四个图标，然后在弹出的tab里点击TERMINAL打开命令行终端。
 ```
-2. 在命令行里输入 `pip install -r requirements.txt` 按 `ENTER` 安装示例程序所需依赖库。
+2. 如果是在gitpod上运行本项目，会自动安装所需依赖包，手动安装方法如下：
+在命令行里输入 `pip install -r requirements.txt` 按 `ENTER` 安装示例程序所需依赖库。
 > 如果安装报错，可以尝试以下命令升级pip：
 ```
 pip install --upgrade pip
@@ -23,6 +24,7 @@ https://github.com/case-smart-data-engineering/6.4.4-1/blob/main/1_%E7%AE%97%E6%
 # 直接把1_算法示例/train/model/bert_pretrain/pytorch_model.bin文件复制粘贴于1_算法示例/train/model/saved_model下。
 ```
 5. 在命令行里输入 `python train/run.py` 按 `ENTER` 运行训练模型程序，或者跟4一样下载我们已经训练好的bert模型。
+> 注意：手动训练模型的话受设备性能影响较大，在较好的设备上训练很快。
 ```
 # 如果是运行run.py文件训练的话，会自动在该目录下生成模型文件。
 # 也可以不用手动训练模型，直接用我们训练好的模型。
